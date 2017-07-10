@@ -20,21 +20,16 @@ module.exports = class LoginPage {
     return browser.getUrl();
   }
 
+  get error() {
+    browser.waitUntil(() => browser.isExisting(this.errorCss));
+    return $(this.errorCss).getText();
+  }
+
   login(user, password) {
     this.username.setValue(user);
     this.password.setValue(password);
     browser.click('#loginbutton');
   }
 
-  get error() {
-    browser.waitUntil(() => {
-      // browser.isExisting(this.errorCss);
-      // console.log($$(this.errorCss).length);
-      return browser.isExisting(this.errorCss);
-    });
-    return $(this.errorCss).getText();
-    // browser.waitForExist(this.errorCss)
-    // browser.getText(this.errorCss);
-  }
 
 }
