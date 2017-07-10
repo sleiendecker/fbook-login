@@ -5,7 +5,7 @@ module.exports = class LoginPage {
   }
 
   open() {
-    browser.url('/login')
+    browser.url('/login');
   }
 
   get username() {

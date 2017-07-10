@@ -1,7 +1,7 @@
 const fsSync = require('fs-sync'),
-parser   = require('xml2json');
+parser       = require('xml2json'),
 
-const utils     = {};
+utils        = {};
 
 utils.mapXlsx = (columns, rows) => {
   var map = {};

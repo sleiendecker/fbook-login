@@ -1,6 +1,6 @@
 const seleniumOpts = require('./selenium.js'),
-path = require('path'),
-specsDir = path.join(__dirname, '..', 'specs')
+path               = require('path'),
+specsDir           = path.join(__dirname, '..', 'specs');
 
 exports.config = {
 

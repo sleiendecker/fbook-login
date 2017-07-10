@@ -12,7 +12,7 @@ describe('Login page - XML', function() {
 
   before('Parse XML', function() {
     loginCreds = parseXml(xmlFile).testUser;
-  })
+  });
 
   it('loads the login page', function() {
     LoginPage.open();

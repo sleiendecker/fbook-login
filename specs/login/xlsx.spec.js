@@ -14,7 +14,7 @@ describe('Login page - XLSX', function() {
 
   before('Parse xlsx', function() {
     loginCreds = mapXlsx(parsedXlsx[0], parsedXlsx[1]);
-  })
+  });
 
   it('loads the login page', function() {
     LoginPage.open();
