@@ -1,6 +1,5 @@
 const path   = require('path'),
 xlsx         = require('node-xlsx'),
-assertions   = require('../../assertions/login.js'),
 loginPage    = require('../../pageObjects/login.page.js'),
 { mapXlsx }  = require('../../utils.js'),
 xlsxFile     = path.join(__dirname, '..', '..', 'testData', 'user.xlsx'),

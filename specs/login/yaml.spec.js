@@ -1,6 +1,5 @@
 const path = require('path'),
 yamlParser = require('yamljs'),
-assertions = require('../../assertions/login.js'),
 loginPage  = require('../../pageObjects/login.page.js'),
 yamlFile   = path.join(__dirname, '..', '..', 'testData', 'user.yaml'),
 

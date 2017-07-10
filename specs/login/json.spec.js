@@ -2,8 +2,6 @@ const loginPage = require('../../pageObjects/login.page.js'),
 loginCreds      = require('../../testData/user.json'),
 LoginPage       = new loginPage();
 
-console.log(browser.options.baseUrl)
-
 describe('Login page - JSON', function() {
 
   it('loads the login page', function() {

@@ -1,5 +1,4 @@
 const path   = require('path'),
-assertions   = require('../../assertions/login.js'),
 loginPage    = require('../../pageObjects/login.page.js'),
 { parseXml } = require('../../utils.js'),
 xmlFile      = path.join(__dirname, '..', '..', 'testData', 'user.xml'),
