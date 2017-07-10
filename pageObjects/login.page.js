@@ -1,11 +1,15 @@
+const assertions = require('../assertions/login.js');
+
 module.exports = class LoginPage {
 
   constructor() {
-    this.errorCss = '.uiContextualLayerPositioner'
+    this.errorCss = '#error_box'
+    this.route = '/login'
+    this.assertions = assertions
   }
 
   open() {
-    browser.url('/login');
+    browser.url(this.route);
   }
 
   get username() {
@@ -21,7 +25,7 @@ module.exports = class LoginPage {
   }
 
   get error() {
-    browser.waitUntil(() => browser.isExisting(this.errorCss));
+    browser.waitUntil(() => $(this.errorCss).getText().length > 0);
     return $(this.errorCss).getText();
   }
 
@@ -30,6 +34,5 @@ module.exports = class LoginPage {
     this.password.setValue(password);
     browser.click('#loginbutton');
   }
-
 
 }
