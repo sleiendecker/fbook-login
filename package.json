@@ -1,0 +1,22 @@
+{
+  "name": "facebook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/webdriverio/bin/wdio ./config/wdio.conf.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.0.2",
+    "fs-sync": "^1.0.4",
+    "node-xlsx": "^0.7.4",
+    "wdio-mocha-framework": "^0.5.10",
+    "wdio-selenium-standalone-service": "0.0.8",
+    "wdio-spec-reporter": "^0.1.0",
+    "webdriverio": "^4.8.0",
+    "xml2json": "^0.11.0",
+    "yamljs": "^0.3.0"
+  }
+}
